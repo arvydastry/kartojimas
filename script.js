@@ -40,22 +40,20 @@
 //   result = "Netinkamas skaicius";
 // }
 
-// console.log(result);
-
 // const price = 10;
 // const result = price > 10 ? "Perku" : "Neperku";
 
 // const hours = 5;
 // const message =
-// hours >= 0 && hours < 6
-// ? "Naktis"
-// : hours >= 6 && hours < 12
-// ? "Rytas"
-// : hours >= 12 && hours < 18
-// ? "Diena"
-// : hours >= 18 && hours <= 24
-// ? "Vakaras"
-// : "blogas laikas";
+//   hours >= 0 && hours < 6
+//     ? "Naktis"
+//     : hours >= 6 && hours < 12
+//     ? "Rytas"
+//     : hours >= 12 && hours < 18
+//     ? "Diena"
+//     : hours >= 18 && hours <= 24
+//     ? "Vakaras"
+//     : "blogas laikas";
 // console.log(message);
 
 // const myName = "Julija";
@@ -68,107 +66,99 @@
 // console.log(myName.length);
 
 // for (let i = 0; i < nameLength; i++) {
-// const char = myName[i];
-// console.log(char);
+//   const char = myName[i];
+//   console.log(char);
 // }
 
 // for (let i = 0; i < myName.length; i++) {
-// const char = myName[i];
-// console.log(`${i + 1} raide yra ${char}`);
+//   const char = myName[i];
+//   console.log(`${i + 1} raide yra ${char}`);
 // }
 
 // Turi return
 
 // function square(number) {
-//   // 5*5
 //   return number * number;
 // }
 
 // const squared = square(5);
 
-// console.log(squared);
-// console.log(square(5))
+// // console.log(squared);
+// // console.log(square(5));
 
-// Neturi return
-
-// Gražina Kubu
 // function cube(number) {
 //   return number * number * number;
 // }
 
-// const cubed = cube(3);
+// console.log(cube(6));
 
-// console.log(cubed);
-// console.log(cube(3));
-
-// // priima du skaičius ir grąžina jų sandaugą
-// function multiNumbers(number) {
-//   return number * number;
+// function multiplied(num1, num2) {
+//   return num1 * num2;
 // }
 
-// const multiNumbered = multiNumbers(2);
+// console.log(multiplied(4, 9));
 
-// console.log(multiNumbered);
-// console.log(multiNumbers(2));
-
-// // priima du skaičius ir grąžina jų sudėti
-// function plusNumber(number) {
-//   return number + number;
+// function sum(num1, num2) {
+//   return num1 + num2;
 // }
 
-// const plusNumbers = plusNumber(3);
+// console.log(sum(34, 56));
 
-// console.log(plusNumbers);
-// console.log(plusNumber(3));
-
-// //priima du skaičius ir grąžina jų atimtį
-// function minus(number) {
-//   return number - number;
+// function subtraction(num1, num2) {
+//   return num1 - num2;
 // }
 
-// const minused = minus(3);
+// console.log(subtraction(27, 98));
 
-// console.log(minused);
-// console.log(minus(3));
-
-// // priima du skaičius ir grąžina jų dalybą
-// function divide(number) {
-//   return number / number;
+// function divide(num1, num2) {
+//   return num1 / num2;
 // }
 
-// const divided = divide(20);
+// console.log(divide(28, 7));
 
-// console.log(divided);
-// console.log(divide(20));
+const myString = "Rokas, labadiena @@!@#123";
 
-// Nauja uzduotis - sukurti funkcija kuri priims stringa kaip argumenta ir grazins kiek jame raidziu
-// const myString = "Rokas, labadiena @@!@#123";
+function stringLength(string) {
+  return string.length;
+}
 
-// function stringLength(string) {
-//   return string.length;
-// }
+console.log(stringLength(myString));
 
-// console.log(stringLength(myString));
+function compareNumbers(num1, num2) {
+  // return num1 > num2;
+  // return num1 > num2 ? true : false;
+  if (num1 > num2) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
-// function compareNumbers(num1, num2) {
-//   // return num1 > num2;
-//   // return num1 > num2 ? true : false;
-//   if (num1 > num2) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
+console.log(compareNumbers(10, 5));
 
-// console.log(compareNumbers(10, 5));
+function firstAndLastChar(string) {
+  // charAt
+  // slice(-1)
+  return string[0] + string[string.length - 1];
+}
 
-// function firstAndLastChar(string) {
-//   // charAt
-//   // slice(-1)
-//   return string[0] + string[string.length - 1];
-// }
+console.log(firstAndLastChar("Zveriukas"));
 
-// console.log(firstAndLastChar("Zveriukas"));
+// Neturi return
+
+function showMessage(message) {
+  console.log(message);
+}
+
+// Neturi argumentu
+
+function getRandomNumber() {
+  return Math.random();
+}
+
+showMessage("Rokas");
+
+console.log(getRandomNumber());
 
 // function myName() {
 //   return "Arvydas";
